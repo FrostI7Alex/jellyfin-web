@@ -23,6 +23,7 @@ declare namespace browser {
     export let tizen: boolean;
     export let vidaa: boolean;
     export let web0s: boolean;
+    export let titanos: boolean;
     export let edgeUwp: boolean;
     export let web0sVersion: number | undefined;
     export let tizenVersion: number | undefined;
@@ -35,5 +36,7 @@ declare namespace browser {
     export let iOS: boolean;
     export let iOSVersion: number | undefined;
 }
+
+export function detectBrowser(userAgent?: string): browser;
 
 export default browser;
